@@ -57,6 +57,5 @@ function problem2() {
     console.timeEnd('Problem 2 run time');
 }
 
-
 problem1();
 problem2();
