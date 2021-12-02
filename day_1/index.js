@@ -5,7 +5,7 @@ const lines = data.split(/\r?\n/);
 
 // ------------ PROBLEM 1 ------------
 function problem1() {
-    console.time('Problem 1 Run time');
+    console.time('Problem 1 run time');
 
     let current = lines[0];
     let count = 0;
@@ -18,12 +18,12 @@ function problem1() {
     }
     
     console.log(`Problem 1 answer: ${count}`)
-    console.timeEnd('Problem 1 Run time');
+    console.timeEnd('Problem 1 run time');
 }
 
 // ------------ PROBLEM 2 ------------
 function problem2() {
-    console.time('Problem 2 Run time');
+    console.time('Problem 2 run time');
 
     let current = parseInt(lines[0], 10) + parseInt(lines[1], 10) + parseInt(lines[2], 10);
     let count = 0;
@@ -36,7 +36,7 @@ function problem2() {
     }
     
     console.log(`\nProblem 2 answer: ${count}`)
-    console.timeEnd('Problem 2 Run time');
+    console.timeEnd('Problem 2 run time');
 }
 
 

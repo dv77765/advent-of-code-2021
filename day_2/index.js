@@ -5,7 +5,7 @@ const lines = data.split(/\r?\n/);
 
 // ------------ PROBLEM 1 ------------
 function problem1() {
-    console.time('Problem 1 Run time');
+    console.time('Problem 1 run time');
     let depth = 0;
     let position = 0;
 
@@ -26,12 +26,12 @@ function problem1() {
     }
     
     console.log(`Problem 1 answer: ${depth*position}`)
-    console.timeEnd('Problem 1 Run time');
+    console.timeEnd('Problem 1 run time');
 }
 
 // ------------ PROBLEM 2 ------------
 function problem2() {
-    console.time('Problem 2 Run time');
+    console.time('Problem 2 run time');
     let depth = 0;
     let position = 0;
     let aim = 0;
@@ -54,7 +54,7 @@ function problem2() {
     }
     
     console.log(`\nProblem 2 answer: ${depth*position}`)
-    console.timeEnd('Problem 2 Run time');
+    console.timeEnd('Problem 2 run time');
 }
 
 
