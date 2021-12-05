@@ -27,18 +27,8 @@ function problem1() {
             }
 
             while(x1 != x2 || y1 != y2) {
-                if(x1 < x2) {
-                    x1++;
-                }
-                else if(x1 > x2) {
-                    x1--;
-                }
-                else if (y1 < y2) {
-                    y1++;
-                }
-                else if (y1 > y2) {
-                    y1--;
-                }
+                x1+=(x2-x1)/Math.abs(x2-x1) || 0;
+                y1+=(y2-y1)/Math.abs(y2-y1) || 0;
 
                 if(!!pointsDict[`${x1}-${y1}`]) {
                     pointsDict[`${x1}-${y1}`] += 1;
@@ -83,19 +73,8 @@ function problem2() {
         }
 
         while(x1 != x2 || y1 != y2) {
-            if(x1 < x2) {
-                x1++;
-            }
-            else if(x1 > x2) {
-                x1--;
-            }
-            
-            if (y1 < y2) {
-                y1++;
-            }
-            else if (y1 > y2) {
-                y1--;
-            }
+            x1+=(x2-x1)/Math.abs(x2-x1) || 0;
+            y1+=(y2-y1)/Math.abs(y2-y1) || 0;
 
             if(!!pointsDict[`${x1}-${y1}`]) {
                 pointsDict[`${x1}-${y1}`] += 1;
