@@ -19,23 +19,13 @@ function problem1() {
             const x2 = points[1][0];
             const y2 = points[1][1];
 
-            if(!!pointsDict[`${x1}-${y1}`]) {
-                pointsDict[`${x1}-${y1}`] += 1;
-            }
-            else {
-                pointsDict[`${x1}-${y1}`] = 1;
-            }
+            pointsDict[`${x1}-${y1}`] = ++pointsDict[`${x1}-${y1}`] || 1;
 
             while(x1 != x2 || y1 != y2) {
                 x1+=(x2-x1)/Math.abs(x2-x1) || 0;
                 y1+=(y2-y1)/Math.abs(y2-y1) || 0;
 
-                if(!!pointsDict[`${x1}-${y1}`]) {
-                    pointsDict[`${x1}-${y1}`] += 1;
-                }
-                else {
-                    pointsDict[`${x1}-${y1}`] = 1;
-                }
+                pointsDict[`${x1}-${y1}`] = ++pointsDict[`${x1}-${y1}`] || 1;
             }
 
         }
@@ -65,23 +55,13 @@ function problem2() {
         const x2 = points[1][0];
         const y2 = points[1][1];
 
-        if(!!pointsDict[`${x1}-${y1}`]) {
-            pointsDict[`${x1}-${y1}`] += 1;
-        }
-        else {
-            pointsDict[`${x1}-${y1}`] = 1;
-        }
+        pointsDict[`${x1}-${y1}`] = ++pointsDict[`${x1}-${y1}`] || 1;
 
         while(x1 != x2 || y1 != y2) {
             x1+=(x2-x1)/Math.abs(x2-x1) || 0;
             y1+=(y2-y1)/Math.abs(y2-y1) || 0;
 
-            if(!!pointsDict[`${x1}-${y1}`]) {
-                pointsDict[`${x1}-${y1}`] += 1;
-            }
-            else {
-                pointsDict[`${x1}-${y1}`] = 1;
-            }
+            pointsDict[`${x1}-${y1}`]  = ++pointsDict[`${x1}-${y1}`] || 1;
         }
     }
     let sum = 0;
